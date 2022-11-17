@@ -36,11 +36,11 @@ public class TestListExamples {
     String a = "a";
     List<String> list1 = new ArrayList<>(Arrays.asList("a","b","c"));
 
-    List<String> list2 = new ArrayList<>(Arrays.asList(a,"d", "e"));
+    List<String> list2 = new ArrayList<>(Arrays.asList("d","e", "f"));
 
     List<String> result = newStudentExample.merge(list1,list2);
     
-    List<String> expected =  new ArrayList<>(Arrays.asList("a",a,"b","c","d","e"));
+    List<String> expected =  new ArrayList<>(Arrays.asList(a,"b","c","d","e", "f"));
     assertEquals(expected,result);
   }
 
